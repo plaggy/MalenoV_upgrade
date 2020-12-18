@@ -18,6 +18,6 @@ Training outputs are the following: txt files with accuracy, train and predictio
 **predict.py** – contains a function that runs prediction and saves results
 
 Here are some prediction examples obtained with different subcube sizes:
-
+![](readme_images/malenov_predictions.png)
 
 
