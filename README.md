@@ -17,7 +17,15 @@ Training outputs are the following: txt files with accuracy, train and predictio
 **utils.py** – contains all the miscellaneous functions to read segy and interpretation files, save results 
 **predict.py** – contains a function that runs prediction and saves results
 
+The open source F3 seismic dataset was used for experiments. The section that was used as test data is shown below:
+![](readme_images/malenov_test_seismic.png)
+
 Here are some prediction examples obtained with different subcube sizes:
 ![](readme_images/malenov_predictions.png)
 
+Overall, the more data is supplied at each location, the smoother and less detailed the result is (similar to the effect the number of samples used for averaging has).
+
+The key insight is that the optimal subcube size may be approximated by the maximum range of spatial correlation between pairs of points in each of the X, Y, Z directions (variogram ranges). In the picture below the result obtained with a subcube calculated as described above and the one obtained with a "defaut" subcube are compared. From a geological perspective, the one on the left has much more interesting details that could be potentially related to real geological features in the subsurface.
+
+![](readme_images/malenov_variogram.png)
 
