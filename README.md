@@ -18,7 +18,7 @@ Training outputs are the following: txt files with accuracy, train and predictio
 **predict.py** – contains a function that runs prediction and saves results
 
 The open source F3 seismic dataset was used for experiments. The section that was used as test data is shown below:
-<img src="readme_images/malenov_test_seismic.png" width="100" height="100">
+<img src="readme_images/malenov_test_seismic.png" width="50%" height="50%">
 ![](readme_images/malenov_test_seismic.png)
 
 Here are some prediction examples obtained with different subcube sizes:
